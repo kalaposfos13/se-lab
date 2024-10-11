@@ -31,7 +31,7 @@ public class TorpedoStore {
 
   public boolean fire(int numberOfTorpedos) throws IllegalArgumentException {
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
-      throw new IllegalArgumentException("numberOfTorpedos");
+      throw new IllegalArgumentException("The parameter unfortunately experienced a value that failed to exist in the specified range.");
     }
 
     boolean success = false;
